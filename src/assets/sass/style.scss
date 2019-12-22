@@ -1,0 +1,30 @@
+/* Default styles */
+@import "vars";
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0px;
+
+    background-color: $blue;
+
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// blocks
+@import "blocks/services";
+@import "blocks/social";
+@import "blocks/about";
+@import "blocks/footer";
+
+
