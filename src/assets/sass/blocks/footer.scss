@@ -1,0 +1,37 @@
+
+.footer{
+    margin-top: 160px;
+    background-color: $yellow;
+    padding: 60px 0;
+}
+.footer__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer__intro{
+    flex-basis: 33,3333%;
+    margin-right: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    @media #{$md} {
+        font-size: 10px;
+    }
+    @media #{$sm} {
+        font-size: 8px;
+        margin: 2%;
+        margin-top: 10px;
+    }
+}
+.footer__address{
+    color: #F2F2F2;
+    opacity: 0.8;
+    margin-bottom: 2%
+}
+.footer__email{
+    color: #2F343A;
+}
+.footer__number{
+    margin-bottom: 7%;
+}

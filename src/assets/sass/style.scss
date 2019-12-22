@@ -6,8 +6,16 @@ html {
 
 body {
     margin: 0px;
+<<<<<<< HEAD
     background-color: $dark;
     font-family: 'Montserrat', sans-serif;
+=======
+
+    background-color: $blue;
+
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+>>>>>>> master
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -17,6 +25,7 @@ body {
 *:after {
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 // bootstrap
 
 
@@ -24,3 +33,13 @@ body {
 // blocks
 @import "blocks/header";
 @import "blocks/preloader";
+=======
+
+// blocks
+@import "blocks/services";
+@import "blocks/social";
+@import "blocks/about";
+@import "blocks/footer";
+
+
+>>>>>>> master
