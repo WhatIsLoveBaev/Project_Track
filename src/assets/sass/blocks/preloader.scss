@@ -1,0 +1,76 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    z-index: 5;
+    transition: 1 all;
+    opacity: 1;
+    visibility: visible;
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader {
+    position: absolute;
+    min-width: 200px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+    background-image: url(/assets/img/pre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anim 1s linear infinite alternate;
+    @media #{$md} {min-width: 150px; height: 110px;}
+}
+
+.preloader-border {
+    width: 100%;
+    height: 100%;
+    animation: pre 2s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes pre {
+    0% {
+        border-top: 10px solid $gold;
+        width: 0;
+    }
+    12% {
+        border-top: 10px solid $gold;
+        width: 100%;
+    }
+    24% {
+        border-right: 10px solid $gold;
+    }
+    36% {
+        border-right: 10px solid $gold;
+        height: 100%;
+    }
+    48% {
+        border-bottom: 10px solid $gold;
+    }
+    60% {
+        border-bottom: 10px solid $gold;
+        width: 100%;
+    }
+    72% {
+        border-left: 10px solid $gold;
+    }
+    84% {
+        border-left: 10px solid $gold;
+        height: 100%;
+    }
+}
