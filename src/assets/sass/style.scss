@@ -1,0 +1,26 @@
+/* Default styles */
+@import "vars";
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0px;
+    background-color: $dark;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+// bootstrap
+
+
+
+// blocks
+@import "blocks/header";
+@import "blocks/preloader";
