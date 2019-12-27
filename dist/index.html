@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     
     <!-- Meta tags -->
@@ -19,16 +19,17 @@
     <div id="page-preloader" class="preloader">
         <div class="preloader-border">
             <div class="loader"></div>
-        </div>
-
+        </div> 
     </div>
+    <div class="overlay"></div>
     <svg style="display: none;">
         <symbol id="plain" viewBox="0 0 30 30">
             <g>
              <path d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z" fill="#2F343A"/>
             </g>
             </symbol>
-    </svg>    <div class="header">
+    </svg>    <div class="overlay"></div>
+    <div class="header">
     <div class="header__line">
         <div class="header__line__block">
             <span class="lang active">РУС</span>
@@ -56,20 +57,19 @@
             <div class="humburger"><div class="humburger__icon"><img src="/assets/img/hum.png"></div></div>
             <div class="header__menu--right">
                 <ul class="ul__menu">
-                    <li class="li__menu ru"><a href="#">УСЛУГИ</a></li>
-                    <li class="li__menu en"><a href="#">Services</a></li>
-                    <li class="li__menu fr"><a href="#">LES SERVICES</a></li>
-                    <li class="li__menu ru"><a href="#">О КОМПАНИИ</a></li>
-                    <li class="li__menu en"><a href="#">About</a></li>
-                    <li class="li__menu fr"><a href="#">Sur</a></li>
-                    <li class="li__menu ru"><a href="#">ВАКАНСИИ</a></li>
-                    <li class="li__menu en"><a href="#">Vacancies</a></li>
-                    <li class="li__menu fr"><a href="#">VACANCES</a></li>
-                    <li class="li__menu ru"><a href="#">КОНТАКТЫ</a></li>
-                    <li class="li__menu en"><a href="#">Contacts</a></li>
-                    <li class="li__menu fr"><a href="#">Contacts</a></li>
+                    <li class="li__menu ru" data-target="anchor"><a class="nav" href="#services">УСЛУГИ</a></li>
+                    <li class="li__menu en" data-target="anchor"><a class="nav" href="#services">Services</a></li>
+                    <li class="li__menu fr" data-target="anchor"><a class="nav" href="#services">LES SERVICES</a></li>
+                    <li class="li__menu ru" data-target="anchor"><a class="nav" href="#about">О КОМПАНИИ</a></li>
+                    <li class="li__menu en" data-target="anchor"><a class="nav" href="#about">About</a></li>
+                    <li class="li__menu fr" data-target="anchor"><a class="nav" href="#about">Sur</a></li>
+                    <li class="li__menu ru" data-target="anchor"><a class="nav" href="#vacancies">ВАКАНСИИ</a></li>
+                    <li class="li__menu en" data-target="anchor"><a class="nav" href="#vacancies">Vacancies</a></li>
+                    <li class="li__menu fr" data-target="anchor"><a class="nav" href="#vacancies">VACANCES</a></li>
+                    <li class="li__menu ru" data-target="anchor"><a class="nav" href="#contacts">КОНТАКТЫ</a></li>
+                    <li class="li__menu en" data-target="anchor"><a class="nav" href="#contacts">Contacts</a></li>
+                    <li class="li__menu fr" data-target="anchor"><a class="nav" href="#contacts">Contacts</a></li>
                 </ul>
-                
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
     
         <div class="container__track__blocks">
     
-        <div class="container__track__block1">
+        <div class="container__track__block1" id="services">
             <div class="container__track__line"></div>
             <h1 class="container__track__h ru">грузоперевозки по европе</h1>
             <h1 class="container__track__h en">trucking in europe</h1>
@@ -102,7 +102,16 @@
             <p class="container__track__p ru">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</p>
             <p class="container__track__p en">The countries of the European Union, as well as Ukraine, Belarus with all documents.</p>
             <p class="container__track__p fr">Les pays de l'Union européenne, ainsi que l'Ukraine, la Biélorussie avec tous les documents.</p>
-            <a href="#"><button class="container__track__btn">подробнее</button></a>
+            <a href="" class="ru"><button class="container__track__btn">подробнее</button></a>
+            <a href="" class="en"><button class="container__track__btn">more</button></a>
+            <a href="" class="fr"><button class="container__track__btn">détails</button></a>
+            
+            
+            <div class="modal">
+                <div class="close">&times;</div>
+            </div>
+            
+            
         </div>
     
         <div class="container__track__block2">
@@ -117,7 +126,9 @@
         </div>
     </div>
     </div>
-    <!-- Content track -->    
+    <!-- Content track -->
+    
+    <div class="button__up"><div class="arrow"></div></div>    
     
     
     
@@ -139,74 +150,90 @@
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru"> АВИАПЕРЕВОЗКИ </span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="fr"> transport aérien</span>
-                                <span class="en"> air transportation</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col"> 
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="services__blocks">
+                        <div class="services__blocks" id="services">
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                             <div class="services__blocks-col">
                                 <div class="circle"></div>
                                 <svg class="social__icon">
                                     <use xlink:href="#plain"></use>
                                 </svg>
-                                <span class="ru">АВИАПЕРЕВОЗКИ</span>
-                                <span class="en"> air transportation</span>
-                                <span class="fr"> transport aérien</span>
+                                <div class="span__wrapper">
+                                    <span class="ru"> АВИАПЕРЕВОЗКИ </span>
+                                    <span class="en"> air transportation</span>
+                                    <span class="fr"> transport aérien</span>
+                                </div>
                             </div>
                         </div>
                     </div> <!-- ./services__inner -->
@@ -275,6 +302,10 @@
                 
             </div> <!-- ./container -->
         </div> <!-- ./sonya -->
+    
+        <main>
+            <div id="map"></div>
+        </main>
 
     <footer class="footer">
         <div class="container">
@@ -286,7 +317,9 @@
                 </div>
     
                 <div class="footer__intro">
-                    <div class="footer__address">123456, Санкт-Петербург, Невский пр-кт 127</div>
+                    <div class="footer__address ru">123456, Санкт-Петербург, Невский пр-кт 127</div>
+                    <div class="footer__address en">123456, St. Petersburg, Nevsky Prospect 127</div>
+                    <div class="footer__address fr">123456, Saint-Pétersbourg, Nevsky Prospect 127</div>
                     <a href="mailto:sales@log.ru" class="footer__email">sales@log.ru</a>
                 </div>
     
@@ -301,5 +334,23 @@
     </footer><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <script src="assets/js/app.js"></script>
+
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: 59.9363373, lng: 30.338335};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 11.79, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+        </script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKqqPAmi8fo6tzLv-VKAEPXPs9LJZiIuA&callback=initMap">
+</script>
 </body>
 </html>

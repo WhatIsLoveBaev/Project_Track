@@ -1,3 +1,4 @@
+<div class="overlay"></div>
 <div class="header">
 <div class="header__line">
     <div class="header__line__block">
@@ -26,20 +27,19 @@
         <div class="humburger"><div class="humburger__icon"><img src="/assets/img/hum.png"></div></div>
         <div class="header__menu--right">
             <ul class="ul__menu">
-                <li class="li__menu ru"><a href="#">УСЛУГИ</a></li>
-                <li class="li__menu en"><a href="#">Services</a></li>
-                <li class="li__menu fr"><a href="#">LES SERVICES</a></li>
-                <li class="li__menu ru"><a href="#">О КОМПАНИИ</a></li>
-                <li class="li__menu en"><a href="#">About</a></li>
-                <li class="li__menu fr"><a href="#">Sur</a></li>
-                <li class="li__menu ru"><a href="#">ВАКАНСИИ</a></li>
-                <li class="li__menu en"><a href="#">Vacancies</a></li>
-                <li class="li__menu fr"><a href="#">VACANCES</a></li>
-                <li class="li__menu ru"><a href="#">КОНТАКТЫ</a></li>
-                <li class="li__menu en"><a href="#">Contacts</a></li>
-                <li class="li__menu fr"><a href="#">Contacts</a></li>
+                <li class="li__menu ru" data-target="anchor"><a class="nav" href="#services">УСЛУГИ</a></li>
+                <li class="li__menu en" data-target="anchor"><a class="nav" href="#services">Services</a></li>
+                <li class="li__menu fr" data-target="anchor"><a class="nav" href="#services">LES SERVICES</a></li>
+                <li class="li__menu ru" data-target="anchor"><a class="nav" href="#about">О КОМПАНИИ</a></li>
+                <li class="li__menu en" data-target="anchor"><a class="nav" href="#about">About</a></li>
+                <li class="li__menu fr" data-target="anchor"><a class="nav" href="#about">Sur</a></li>
+                <li class="li__menu ru" data-target="anchor"><a class="nav" href="#vacancies">ВАКАНСИИ</a></li>
+                <li class="li__menu en" data-target="anchor"><a class="nav" href="#vacancies">Vacancies</a></li>
+                <li class="li__menu fr" data-target="anchor"><a class="nav" href="#vacancies">VACANCES</a></li>
+                <li class="li__menu ru" data-target="anchor"><a class="nav" href="#contacts">КОНТАКТЫ</a></li>
+                <li class="li__menu en" data-target="anchor"><a class="nav" href="#contacts">Contacts</a></li>
+                <li class="li__menu fr" data-target="anchor"><a class="nav" href="#contacts">Contacts</a></li>
             </ul>
-            
         </div>
     </div>
 </div>
@@ -64,7 +64,7 @@
 
     <div class="container__track__blocks">
 
-    <div class="container__track__block1">
+    <div class="container__track__block1" id="services">
         <div class="container__track__line"></div>
         <h1 class="container__track__h ru">грузоперевозки по европе</h1>
         <h1 class="container__track__h en">trucking in europe</h1>
@@ -72,7 +72,16 @@
         <p class="container__track__p ru">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</p>
         <p class="container__track__p en">The countries of the European Union, as well as Ukraine, Belarus with all documents.</p>
         <p class="container__track__p fr">Les pays de l'Union européenne, ainsi que l'Ukraine, la Biélorussie avec tous les documents.</p>
-        <a href="#"><button class="container__track__btn">подробнее</button></a>
+        <a href="" class="ru"><button class="container__track__btn">подробнее</button></a>
+        <a href="" class="en"><button class="container__track__btn">more</button></a>
+        <a href="" class="fr"><button class="container__track__btn">détails</button></a>
+        
+        
+        <div class="modal">
+            <div class="close">&times;</div>
+        </div>
+        
+        
     </div>
 
     <div class="container__track__block2">
@@ -88,3 +97,5 @@
 </div>
 </div>
 <!-- Content track -->
+
+<div class="button__up"><div class="arrow"></div></div>

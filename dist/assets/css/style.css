@@ -240,7 +240,7 @@ body {
 
 @media (max-width: 575px) {
     .humburger {
-        margin: 0 20px 0 70px;
+        margin: 0 20px 0 80%;
     }
 }
 
@@ -696,8 +696,61 @@ body {
 }
 
 /* block 3 */
+.button__up {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 80%;
+    left: 5%;
+    background-color: #C8A35F;
+    border-radius: 50%;
+    display: none;
+    -webkit-animation: up 1.5s ease-in infinite alternate;
+    animation: up 1.5s ease-in infinite alternate;
+    z-index: 6;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 50%;
+    height: 50%;
+    background-image: url(/assets/img/chevron-up.png);
+    background-size: cover;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+@-webkit-keyframes up {
+    0% {
+        background-color: #C8A35F;
+    }
+
+    100% {
+        background-color: rgba(200, 163, 95, 0.603);
+    }
+}
+
+@keyframes up {
+    0% {
+        background-color: #C8A35F;
+    }
+
+    100% {
+        background-color: rgba(200, 163, 95, 0.603);
+    }
+}
+
 .show {
     display: block;
+}
+
+@media (min-width: 992px) {
+    .show {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
 .ru {
@@ -716,6 +769,47 @@ body {
     display: unset;
 }
 
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 10%;
+}
+
+.modal {
+    width: 60%;
+    height: 500px;
+    background-color: white;
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.close {
+    position: absolute;
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    color: black;
+    left: 97%;
+    top: -5%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .preloader {
     position: fixed;
     left: 0;
@@ -723,7 +817,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #2F343A;
-    z-index: 5;
+    z-index: 1000;
     -webkit-transition: 1 all;
     -o-transition: 1 all;
     transition: 1 all;
@@ -977,6 +1071,10 @@ body {
     }
 }
 
+.span__wrapper {
+    margin-bottom: 25px;
+}
+
 .circle {
     display: none;
     border: none;
@@ -1125,7 +1223,6 @@ svg path {
 }
 
 .footer {
-    margin-top: 160px;
     background-color: #C8A35F;
     padding: 60px 0;
 }

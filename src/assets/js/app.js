@@ -10,6 +10,8 @@ $(document).ready(function() {
 
     $('.humburger__icon').on('click', function() {
         $('.ul__menu').toggleClass('show');
+
+        
     });
     /* Humburger */
 
@@ -101,7 +103,52 @@ langs.addEventListener('click', function(event) {
             three();
         }
     }
+
+});
+/* Langs */
+
+
+
+$(function() {
+ 
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('.button__up').fadeIn(); 
+        } else {
+        $('.button__up').fadeOut();
+        }
+});
+     
+$('.button__up').click(function() {  
+    $('body,html').animate({scrollTop:0},800);
+     }); 
+});
+/* Scroll UP */
+
+
+$(function() {
+    $('.container__track__btn').on('click', function(e) {
+        e.preventDefault();
+        $('.overlay').animate({opacity: 'toggle'});
+        $('.modal').fadeToggle('slow');
+    });
+
+    $('.close').on('click', function() {
+        $('.overlay').animate({opacity: 'toggle'});
+        $('.modal').fadeToggle('slow');
+    });
 });
 
+/* Modal */
 
+$('.nav').on('click', function() {
+    var elem = $(this).attr('href');
+    var dist = $(elem).offset().top;
+
+    $('html, body').animate({'scrollTop': dist}, 800);
+
+    return false;
+});
+
+/* Scroll menu */
 
