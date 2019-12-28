@@ -12,7 +12,7 @@
     line-height: 45px;
     color: white;
     font-size: 12px;
-}
+} 
 .lang {
     cursor: pointer;
 }
@@ -354,10 +354,10 @@
 
 @keyframes up {
     0% {
-        background-color: $gold;
+        background-color: $gold-light;
     }
     100% {
-        background-color: $gold-light;
+        background-color: $gold-light2;
     }
 }
 
@@ -389,7 +389,7 @@
 
 .modal {
     width: 60%;
-    height: 500px;
+    height: auto;
     background-color: white;
     z-index: 20;
     position: fixed;
@@ -397,16 +397,52 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    @media #{$md} {width: 100%;}
+}
+.modal__h2 {
+    background-color: $gold;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 50px;
+    color: $dark;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.modal__container {
+    background-color: $dark-light;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.modal__track {
+    flex-basis: 30%;
+    content: url(/assets/img/gruz2.png);
+    background-size: cover;
+    width: 30%;
+    height: 30%;
+}
+.modal__text {
+    flex-basis: 70%;  
+}
+.modal__number {
+    text-align: center;
 }
 .close {
-    position: absolute;
+    position: fixed;
     width: auto;
     height: auto;
     font-size: 50px;
     color: black;
-    left: 97%;
+    left: 96%;
     top: -5%;
     cursor: pointer;
+    @media #{$xl} {left: 94%;}
+    @media #{$lg} {left: 92%;}
+    @media #{$md} {left: 90%;}
+
 }
 .overlay {
     position: fixed;

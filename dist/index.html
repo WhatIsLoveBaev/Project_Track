@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     
     <!-- Meta tags -->
@@ -46,7 +46,7 @@
     <div class="header__menu__wrapper">
         <div class="header__menu">
             <div class="header__menu--left">
-                <div class="header__menu__company" ><a href="#"><img src="/assets/img/logo.png" ></a></div>
+                <div class="header__menu__company" ><a class="logo" href="#logo"><img src="/assets/img/logo.png" ></a></div>
                 <div class="header__menu--line"></div>
                 <div class="header__menu--logo"><img src="/assets/img/placeholder.png"></div>
                 <div class="header__menu--text ru"><a href="#">Наши офисы</a></div>
@@ -76,7 +76,7 @@
     </div>
     <!-- header menu -->
     
-    <div class="header__content">      
+    <div class="header__content" id="logo">      
         <div class="header__content__wrapper">
             <h1 class="header__content__h ru">грузовые перевозки</h1>
             <h1 class="header__content__h en">freight transportation</h1>
@@ -94,7 +94,7 @@
     
         <div class="container__track__blocks">
     
-        <div class="container__track__block1" id="services">
+        <div class="container__track__block1">
             <div class="container__track__line"></div>
             <h1 class="container__track__h ru">грузоперевозки по европе</h1>
             <h1 class="container__track__h en">trucking in europe</h1>
@@ -109,6 +109,16 @@
             
             <div class="modal">
                 <div class="close">&times;</div>
+                <div class="modal__header">
+                    <h2 class="modal__h2">Свяжитесь с нами</h2>
+                </div>
+                <div class="modal__container">
+                    <div class="modal__text">
+                        <div class="modal__number">+7 (812) 344-56-65</div>
+                        <div class="modal__number">+7 (812) 355-56-65</div>
+                    </div>
+                    <div class="modal__track"></div>
+                </div>
             </div>
             
             
@@ -134,6 +144,7 @@
     
          <div class="sonya">
             <div class="container">
+                
         
                 <!-- SERVICES -->
         
@@ -333,7 +344,7 @@
         </div> <!-- ./container -->
     </footer><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.min.js"></script>
 
 
 <script>

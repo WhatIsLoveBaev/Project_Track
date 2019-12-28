@@ -8,7 +8,6 @@ body {
     margin: 0px;
     background-color: #2F343A;
     font-family: 'Montserrat', sans-serif;
-    background-color: #2F343A;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 1rem;
@@ -723,21 +722,21 @@ body {
 
 @-webkit-keyframes up {
     0% {
-        background-color: #C8A35F;
+        background-color: rgba(200, 163, 95, 0.7);
     }
 
     100% {
-        background-color: rgba(200, 163, 95, 0.603);
+        background-color: rgba(200, 163, 95, 0.5);
     }
 }
 
 @keyframes up {
     0% {
-        background-color: #C8A35F;
+        background-color: rgba(200, 163, 95, 0.7);
     }
 
     100% {
-        background-color: rgba(200, 163, 95, 0.603);
+        background-color: rgba(200, 163, 95, 0.5);
     }
 }
 
@@ -777,7 +776,7 @@ body {
 
 .modal {
     width: 60%;
-    height: 500px;
+    height: auto;
     background-color: white;
     z-index: 20;
     position: fixed;
@@ -789,15 +788,80 @@ body {
     display: none;
 }
 
+@media (max-width: 767px) {
+    .modal {
+        width: 100%;
+    }
+}
+
+.modal__h2 {
+    background-color: #C8A35F;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 50px;
+    color: #2F343A;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.modal__container {
+    background-color: #393F47;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.modal__track {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    content: url(/assets/img/gruz2.png);
+    background-size: cover;
+    width: 30%;
+    height: 30%;
+}
+
+.modal__text {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+}
+
+.modal__number {
+    text-align: center;
+}
+
 .close {
-    position: absolute;
+    position: fixed;
     width: auto;
     height: auto;
     font-size: 50px;
     color: black;
-    left: 97%;
+    left: 96%;
     top: -5%;
     cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+    .close {
+        left: 94%;
+    }
+}
+
+@media (max-width: 991px) {
+    .close {
+        left: 92%;
+    }
+}
+
+@media (max-width: 767px) {
+    .close {
+        left: 90%;
+    }
 }
 
 .overlay {

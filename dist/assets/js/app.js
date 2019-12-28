@@ -150,4 +150,13 @@ $('.nav').on('click', function() {
     return false;
 });
 
+
+$('.logo').on('click', function() {
+    var elem = $(this).attr('href');
+    var dist = $(elem).offset().top;
+
+    $('html, body').animate({'scrollTop': dist}, 800);
+
+    return false;
+});
 /* Scroll menu */
