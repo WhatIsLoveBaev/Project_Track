@@ -21,8 +21,8 @@ $(document).ready(function() {
         next = document.querySelector('.container__track__next'),
         prev = document.querySelector('.container__track__prev');
 
-    slides[1].style.content = 'url(/assets/img/gruz.png)';
-    slides[2].style.content = 'url(/assets/img/gruz3.png)';
+    slides[1].style.content = 'url(assets/img/gruz.png)';
+    slides[2].style.content = 'url(assets/img/gruz3.png)';
 
     showSlides(slideIndex);
     function showSlides(n) {

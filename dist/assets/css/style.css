@@ -262,7 +262,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: url(/assets/img/Rectangle2.png);
+    background: url(../img/Rectangle2.png);
     background-size: cover;
 }
 
@@ -590,7 +590,7 @@ body {
     display: none;
     max-width: 100%;
     height: auto;
-    content: url(/assets/img/gruz1.png);
+    content: url(../img/gruz1.png);
     position: absolute;
     margin-left: 40%;
     -webkit-animation: track 1s linear;
@@ -608,7 +608,7 @@ body {
 
 @-webkit-keyframes track {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
 
     100% {
@@ -618,7 +618,7 @@ body {
 
 @keyframes track {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
 
     100% {
@@ -628,7 +628,7 @@ body {
 
 @-webkit-keyframes tracksm {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
 
     100% {
@@ -638,7 +638,7 @@ body {
 
 @keyframes tracksm {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
 
     100% {
@@ -647,11 +647,11 @@ body {
 }
 
 .container__track__img2 {
-    content: url(/assets/img/gruz.png);
+    content: url(../img/gruz.png);
 }
 
 .container__track__img3 {
-    content: url(/assets/img/gruz2.png);
+    content: url(../img/gruz2.png);
 }
 
 /* block 2 */
@@ -713,7 +713,7 @@ body {
 .arrow {
     width: 50%;
     height: 50%;
-    background-image: url(/assets/img/chevron-up.png);
+    background-image: url(../img/chevron-up.png);
     background-size: cover;
     position: absolute;
     left: 25%;
@@ -820,7 +820,7 @@ body {
 .modal__track {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
-    content: url(/assets/img/gruz2.png);
+    content: url(../img/gruz2.png);
     background-size: cover;
     width: 30%;
     height: 30%;
@@ -903,7 +903,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-image: url(/assets/img/pre.png);
+    background-image: url(../img/pre.png);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-animation: anim 1s linear infinite alternate;

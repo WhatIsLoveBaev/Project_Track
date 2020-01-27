@@ -126,7 +126,7 @@
     max-width: 100%;
     display: flex;
     justify-content: center;
-    background: url(/assets/img/Rectangle2.png);
+    background: url(../img/Rectangle2.png);
     background-size: cover;
 }
 .header__content__wrapper {
@@ -269,7 +269,7 @@
     display: none;
     max-width: 100%;
     height: auto;
-    content: url(/assets/img/gruz1.png);
+    content: url(../img/gruz1.png);
     position: absolute;
     margin-left: 40%;
     -webkit-animation: track 1s linear;
@@ -287,7 +287,7 @@
 }
 @keyframes track {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
     100% {
         margin-left: 40%;
@@ -295,17 +295,17 @@
 }
 @keyframes tracksm {
     0% {
-        margin-left: 200%;
+        margin-left: 150%;
     }
     100% {
         margin: 0;
     }
 }
 .container__track__img2 {
-    content: url(/assets/img/gruz.png);
+    content: url(../img/gruz.png);
 }
 .container__track__img3 {
-    content: url(/assets/img/gruz2.png);
+    content: url(../img/gruz2.png);
 }
 /* block 2 */
 
@@ -345,7 +345,7 @@
 .arrow {
     width: 50%;
     height: 50%;
-    background-image: url(/assets/img/chevron-up.png);
+    background-image: url(../img/chevron-up.png);
     background-size: cover;
     position: absolute;
     left: 25%;
@@ -419,7 +419,7 @@
 }
 .modal__track {
     flex-basis: 30%;
-    content: url(/assets/img/gruz2.png);
+    content: url(../img/gruz2.png);
     background-size: cover;
     width: 30%;
     height: 30%;

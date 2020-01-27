@@ -1,5 +1,5 @@
 node_modules
-dist
+
 gulpfile.js
 package.json
 package-lock.json
